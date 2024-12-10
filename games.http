@@ -1,0 +1,29 @@
+GET http://localhost:5007
+###
+GET http://localhost:5007/games
+###
+GET http://localhost:5007/games/6
+###
+POST http://localhost:5007/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Sandbox",
+    "price": 20.1,
+    "releaseDate": "2009-05-17"
+}
+
+###
+PUT http://localhost:5007/games/6
+Content-Type: application/json
+
+{
+    "name": "Minecraft(new)",
+    "genre": "Sandbox",
+    "price": 20.1,
+    "releaseDate": "2009-05-17"
+}
+
+###
+DELETE http://localhost:5007/games/6
