@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "yOO8UCd7s6RLp3WiQeY2Uc91Mf9vPcDfdyEiRnygU3g=",
+  "Hash": "Utbl/a8YfDjY8TkWMhKS5kHpiGzIQuKt5xhEtoFCXss=",
   "Source": "GameStore.Api",
   "BasePath": "_content/GameStore.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

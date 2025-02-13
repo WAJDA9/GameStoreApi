@@ -1,6 +1,10 @@
+using GameStore.Api.Data;
 using GameStore.Api.EndPoints;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connString = builder.Configuration.GetConnectionString("GameStore");
+builder.Services.AddSqlite<GameStoreContext>(connString);
 
 builder.Services.AddCors(options =>
 {
@@ -13,6 +17,7 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+app.MapGet("/",()=>"Hello World");
 
 app.UseCors("AllowAll");
 
